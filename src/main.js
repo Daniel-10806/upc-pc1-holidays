@@ -20,7 +20,7 @@ app.use(PrimeVue, {
     }
 });
 
-app.component('pv-toolvar', Toolbar);
+app.component('pv-toolbar', Toolbar);
 app.component('pv-card', Card);
 
 app.mount('#app');
