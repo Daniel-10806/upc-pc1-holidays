@@ -1,13 +1,16 @@
 <script>
-import toolbarContent from "./public/components/toolbar.component.vue";
 import { HolidaysApiService } from "./holidays/service/holidays.service.js";
 import { Country } from "./holidays/model/country.entity.js";
+
 import countryList from "./holidays/components/country-list.component.vue";
+import toolbarContent from "./public/components/toolbar.component.vue";
+import footerContent from "./public/components/footer.component.vue";
 
 export default {
 
   components: {
     toolbarContent,
+    footerContent,
     countryList
   },
 
@@ -62,6 +65,7 @@ export default {
 <template>
   <toolbarContent/>
   <countryList :countries="this.countries"/>
+  <footerContent/>
 </template>
 
 <style scoped>
