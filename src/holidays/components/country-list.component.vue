@@ -1,11 +1,11 @@
 <script>
-import CountryItem from './country-item.component.vue'
+import countryItem from './country-item.component.vue'
 
 export default {
   name: "country-list",
 
   components: {
-    CountryItem
+    countryItem
   },
 
   props: {
@@ -21,7 +21,7 @@ export default {
 
   <div v-if="countries.length">
     <div v-for="country in countries" >
-      <country-item :country="country" :key="country.uuid"/>
+      <countryItem :country="country" :key="country.uuid"/>
     </div>
   </div>
 
